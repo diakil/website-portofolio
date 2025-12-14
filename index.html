@@ -3,60 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Essential</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Personal Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-   <main class="px-12">
-    <nav class="flex justify-between h-10 content-center mt-4">
-        <h1 class="text-blue-400 text-xl">Diah's Space</h1>
-        <p>About</p>
-    </nav>
-    <section class="flex h-120">
-        <div class="flex justify-between flex-1  p-12">
-            <div class="content-end">
-                <p class="rotate-90 text-blue-800 font-bold">00:06:05:08</p>
-            </div>
-            <div class="content-center">
-                <h1 class="text-blue-800 font-bold text-xl">PLAY</h1>
-            </div>
-            <div>
-                <p class="content-start rotate-90 font-bold">Web Design</p>
-            </div>
-        </div>
-        <div class="flex justify-between flex-1 p-12">
-           <div>
-            <div class="flex items-center gap-8">
-                <div class="w-12 h-12 rounded-full bg-blue-600"></div>
+<body class=" scroll-smooth bg-[#FAF7F0] text-slate-900 antialiased">
+
+    <header>
+        <nav class="max-w-7x1 mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo / Name -->
                 <div>
-                    <p>Diah Maulida Akil</p>
+                    <a href="#" class="text-[15px] font-medium tracking-tight text-slate-900">Diah Maulida Akil</a>   
                 </div>
+
+                <!-- Right Side & Menu -->
+                 <div class="flex items-center gap-6">
+                    <ul class="hidden md:flex items-center gap-6 text-[13px] text-slate-600">
+                        <li><a href="#" class="hover:text-slate-900 transition">About</a></li>
+                        <li><a href="#" class="hover:text-slate-900 transition">Experience</a></li>
+                        <li><a href="#" class="hover:text-slate-900 transition">Projects</a></li>
+                    </ul>
+
+                    <!-- CTA Button -->
+                     <a href="#" class="inline-flex items-center justify-center px-4 py-2 
+                  rounded-full bg-[#1E2F43] text-white 
+                  text-[13px] font-medium hover:opacity-90 transition">
+                        Let's Connect
+                     </a>
+                 </div>
             </div>
-            <div class="mt-20">
-                <h1 class="text-4xl font-bold">
-                learn Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Repudiandae ullam distinctio blanditiis culpa, reiciendis porro deleniti maxime, 
-                non aperiam alias voluptatum fuga quam nulla. 
-                Recusandae modi cupiditate placeat accusamus ducimus?
-                </h1>
-            </div>
+        </nav>
+    </header>
+
+    <!--MAIN CONTENT-->
+   <main>
+
+    <!-- Profile Section -->
+    <section class="max-w-7xl mx-auto px-6 pt-20 pb-28">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+            <!-- Text Content -->
+            <div class="space-y-8">
+                <span class="inline-block text-sm px-3 py-1 rounded-full bg-[#FFE4EF] text-[#1E2F43] font-medium">Welcome to My Portfolio</span>
+                <h1 class="text-4x1 lg:text-5xl font-semibold tracking-tight leading-tight">Hi, I'm Diah Maulida Akil</h1>
+                <p class="text-base text-slate-700 max-w-md leading-relaxed">
+                    I build and maintain visual interfaces using HTML, CSS, and JavaScript  
+                    to ensure that websites are responsive, attractive, easy to use, 
+                    and function smoothly across a wide range of devices.</p>
+
+            <!-- Buttons -->
+             <div class="flex items-center gap-4">
+                <a href="#" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#FFE4EF] text-[#1E2F43] text-sm font-medium hover:opacity-90 transition">View Projects</a>
+                <a href="#" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-slate-300 text-sm font-medium hover:bg-slate-100 transition">Download Resume</a>
+             </div>
         </div>
-    </div>
+
+        <!-- Right: Visual-->
+         <div>
+            <div class="w-full h-[360px] rounded-3xl bg-gradient-to-br from-slate-200 to-slate-300">
+
+            </div>
+         </div>
     </section>
 
-    <section class="flex">
-        <div class="flex-1 p-12">
-            <h4 class="text-xl font-bold mb-4">Creating <span class="text-blue-800">something</span> cool</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A neque non amet impedit sequi adipisci veritatis, 
-            velit explicabo dolores harum ut sit nulla aspernatur fuga iste dicta ab vitae! Ullam.
-            Maiores dolorum obcaecati ratione minima eius voluptas? Consequatur itaque perferendis 
-            quidem enim voluptas doloremque sed dolores alias nulla recusandae dignissimos error illo commodi esse, 
-            iste aliquam fugit eum rem eius.</p>
-        </div>
-        <div class="flex-1 p-12">
-            <button type="button" class="w-30 bg-blue-800 text-white rounded-md py-4"> Take Course </button>
-        </div>
+
+    <!-- Expertise Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <!-- Section Header -->
+         <div class="mb-16">
+          <h2 class="text-[28px] font-semibold tracking-tight">My Experience</h2>  
+          <p class="mt-3 max-w-xl text-[15px] text-slate-700 leading-relaxed">Combining technical expertise with creative problem solving to build scalable solutions.</p>
+         </div>
+
+        <!-- Grid Cards -->
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="rounded-[28px] bg-[#1E2F43] px-8 pt-10 pb-12 hover:-translate-y-1 transition">
+            <div class="mb-4"></div>
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-11 mb-4 text-white bg-white/50 p-2 rounded-full">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+            </svg>
+            <h3 class="text-[17-px] font-medium text-white mb-2">Front-End Development</h3>
+            <p class="text-[14.5px] text-white leading-relaxed">Building responsive and interactive web applications using modern front-end technologies.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="rounded-[28px] bg-[#1E2F43] px-8 pt-10 pb-12 hover:-translate-y-1 transition">
+                <div class="mb-4"></div>
+                <!-- Icon -->
+                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-11 mb-4 text-white bg-white/50 p-2 rounded-full">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                </svg>
+            <div class="mb-6 w-9 h-9 rounded-full bg-[#1E2F43]/10 flex items-center justify-center">
+                <span class="w-2 h-2 rounded-full bg-[#1E2F43]"></span>
+            </div>
+                <h3 class="text-lg font-medium text-white mb-2">Essential UI</h3>
+                <p class="text-sm text-white">Designing user-friendly interfaces with a focus on user experience.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="rounded-[28px] bg-[#1E2F43] px-8 pt-10 pb-12 hover:-translate-y-1 transition">
+                <div class="mb-4"></div>
+                <!-- Icon -->
+                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-11 mb-4 text-white bg-white/50 p-2 rounded-full">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+
+            <div class="mb-6 w-9 h-9 rounded-full bg-[#1E2F43]/10 flex items-center justify-center">
+                <span class="w-2 h-2 rounded-full bg-[#1E2F43]"></span>
+            </div>
+                <h3 class="text-lg font-medium text-white mb-2">Project Management</h3>
+                <p class="text-sm text-white">Coordinating teams and resources to deliver projects on time and within budget.</p>
+         </div>
     </section>
+
+
+    <!-- Selected Works -->
+    <section class="max-w-7xl mx-auto px-6 py-24">
+        <!-- Section Header -->
+         <div class="mb-12">
+          <h2 class="text-3xl font-semibold">Selected Projects</h2>  
+          <p class="mt-3 max-w-xl text-slate-700">A showcase of some of my recent work demonstrating my skills and expertise.</p>
+         </div>
+
+        <!-- Grid Projects -->
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="rounded-2xl overflow-hidden bg-[#F3EEE6]">
+                <div class="h-64 bg-slate-300"></div>
+                <div class="p-6">
+                    <h3 class="text-lg font-medium">Project Title 1</h3>
+                    <p class="text-sm text-slate-600">Brief description of the project highlighting key features and technologies used.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="rounded-2xl overflow-hidden bg-[#F3EEE6]">
+                <div class="h-64 bg-slate-300"></div>
+                <div class="p-6">
+                    <h3 class="text-lg font-medium">Project Title 2</h3>
+                    <p class="text-sm text-slate-600">Brief description of the project highlighting key features and technologies used.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="rounded-2xl overflow-hidden bg-[#F3EEE6]">
+                <div class="h-64 bg-slate-300"></div>
+                <div class="p-6">
+                    <h3 class="text-lg font-medium">Project Title 3</h3>
+                    <p class="text-sm text-slate-600">Brief description of the project highlighting key features and technologies used.</p>
+                </div>
+            </div>
+
+         <!-- Project 4 -->
+            <div class="rounded-2xl overflow-hidden bg-[#F3EEE6]">
+                <div class="h-64 bg-slate-300"></div>
+                <div class="p-6">
+                    <h3 class="text-lg font-medium">Project Title 4</h3>
+                    <p class="text-sm text-slate-600">Brief description of the project highlighting key features and technologies used.</p>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- CTA -->
+     <section class="max-w-7xl mx-auto px-6 py-24">
+        <div class="rounded-3xl bg-[#1E2F43] text-white px-10 py-16 text-center">
+            <h2 class="text-3xl lg:text-4xl font-semibold">Let's work together</h2>
+            <p class="mt-4 max-w-xl mx-auto text-slate-200">I'm open to new opportunities and collaborations. 
+                Let’s work together to build something meaningful and impactful.</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#1E2F43] text-sm font-medium hover:opacity-90 transition">Get in Touch</a>
+                <a href="#" class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/40 text-sm font-medium hover:bg-white/10 transition">Download Resume</a>
+        </div>
+     </section>
    </main> 
+
+    <footer class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex flex-col  md:flex-row items-center justify-between gap-6"></div>
+        <!-- Left -->
+         <p class="text-sm text-slate-600">&copy; © 2025 Diah Maulida Akil. All rights reserved.</p>
+         <!-- Right -->
+            <div class="flex items-center gap-6 text-sm text-slate-600">
+                <a href="www.linkedin.com/in/diahmaulidaa" class="hover:text-slate-900">LinkedIn</a>
+                <a href="https://www.instagram.com/____diakl?igsh=cnQ1bTRhazRwYmc5&utm_source=qr" class="hover:text-slate-900">Instagram</a>
+                <a href="https://github.com/diakil" class="hover:text-slate-900">GitHub</a>
+            </div>
+    </footer>
 </body>
 </html>
